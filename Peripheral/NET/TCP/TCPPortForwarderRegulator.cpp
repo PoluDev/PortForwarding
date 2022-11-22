@@ -48,7 +48,7 @@ bool NET::TCP::TCPPortForwarderRegulator::init()
     tcp_server_->connect_on_data_received(std::bind(&TCPPortForwarderRegulator::server_data_received, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
     tcp_server_->connect_on_client_connected(std::bind(&TCPPortForwarderRegulator::client_connected, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
     tcp_server_->init();
-
+    return true;
 }
 
 bool NET::TCP::TCPPortForwarderRegulator::start()

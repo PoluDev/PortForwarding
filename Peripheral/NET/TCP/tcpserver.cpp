@@ -54,6 +54,7 @@ bool NET::TCP::TCPServer::start()
 bool NET::TCP::TCPServer::stop()
 {
     is_running_ = false;
+    return is_running_;
 }
 
 bool NET::TCP::TCPServer::is_running() const

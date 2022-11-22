@@ -1,5 +1,5 @@
-#ifndef APPDEF_H
-#define APPDEF_H
+#ifndef __APP_DEF_H__
+#define __APP_DEF_H__
 
 #include <string>
 
@@ -12,4 +12,4 @@ struct ApplicationParameter
 };
 
 
-#endif // APPDEF_H
+#endif // __APP_DEF_H__

@@ -5,8 +5,8 @@
 #include <memory>
 #include <string>
 
-#include "AppDef.h"
-#include "DefaultLogger.h"
+#include "../../../AppDef.h"
+#include "../../../DataAccess/Log/DefaultLogger.h"
 #include "tcpserver.h"
 #include "tcpclient.h"
 
