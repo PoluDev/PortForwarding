@@ -22,30 +22,44 @@ This work Well.
    * [Download QT.](https://download.qt.io/archive/qt/5.14/5.14.0/)  
 +  **Building and Installing cmake (Recommended for developers)**
    * For this approach you need to install the GCC tools:  
-  `sudo apt update`  
-  `sudo apt install build-essential libtool autoconf unzip wget`  
+   ```
+   sudo apt update
+   sudo apt install build-essential libtool autoconf unzip wget
+   ```
    * Uninstall the default version provided by Ubuntu's package manager as in  
-   `sudo apt remove --purge --auto-remove cmake`  
+   ```
+   sudo apt remove --purge --auto-remove cmake  
+   ```
    * Go to the [official CMake webpage](https://cmake.org/download/), then download and extract the latest version. Update the version and build variables in the following command to get the desired version:  
-    `version=3.24`  
-    `build=1`  
-    `## don't modify from here`  
-    `mkdir ~/temp`  
-    `cd ~/temp`  
-    `wget https://cmake.org/files/v$version/cmake-$version.$build.tar.gz`  
-    `tar -xzvf cmake-$version.$build.tar.gz`  
-    `cd cmake-$version.$build/`  
+    ```
+    version=3.24  
+    build=1  
+    ## don't modify from here  
+    mkdir ~/temp  
+    cd ~/temp  
+    wget https://cmake.org/files/v$version/cmake-$version.$build.tar.gz  
+    tar -xzvf cmake-$version.$build.tar.gz  
+    cd cmake-$version.$build/  
+    ```
     * Install the extracted source by running:  
-    `./bootstrap`  
-    `make -j$(nproc)`  
-    `sudo make install`  
+     ```
+    ./bootstrap  
+    make -j$(nproc)  
+    sudo make install  
+     ```
     * Test your new cmake version.  
-    `$ cmake --version`  
+     ```
+    $ cmake --version  
+     ```
     * Results of cmake --version:  
-    `cmake version 3.24.X`  
-    `CMake suite maintained and supported by Kitware(kitware.com/cmake).`  
+    ```
+    cmake version 3.24.X  
+    CMake suite maintained and supported by Kitware(kitware.com/cmake).  
+    ```
 + **Install boost**  
-    `sudo apt-get install libboost-all-dev`  
+    ```
+    sudo apt-get install libboost-all-dev  
+    ```
 
 
 
