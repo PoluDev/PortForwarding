@@ -22,7 +22,7 @@ if(${MSVC_VERSION})
         add_definitions(-D_ITERATOR_DEBUG_LEVEL=0)
 endif(${MSVC_VERSION})
 #find_package(Threads)
-find_package(Boost 1.80.0 REQUIRED COMPONENTS date_time thread filesystem system)
+find_package(Boost REQUIRED COMPONENTS date_time thread filesystem system)
 
 
 message(${Boost_VERSION})
