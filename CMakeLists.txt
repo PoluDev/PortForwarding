@@ -32,6 +32,7 @@ message(${Boost_INCLUDE_DIRS})
 
 set(HEADER_FILE_LIST
     "AppDef.h"
+    "logger.h"
     "DataAccess/Log/DefaultLogger.h"
     "Peripheral/NET/TCP/IAsyncClient.h"
     "Peripheral/NET/TCP/IAsyncServer.h"
@@ -42,6 +43,7 @@ set(HEADER_FILE_LIST
 
 set(SOURCE_FILE_LIST
     "main.cpp"
+    "logger.cpp"
     "DataAccess/Log/DefaultLogger.cpp"
     "Peripheral/NET/TCP/tcpclient.cpp"
     "Peripheral/NET/TCP/TCPPortForwarderRegulator.cpp"
